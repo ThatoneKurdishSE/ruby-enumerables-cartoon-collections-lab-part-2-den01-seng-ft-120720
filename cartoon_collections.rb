@@ -14,7 +14,9 @@ def summon_captain_planet(planeteer_calls)
 end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  valid_calls.find do |call| valid_calls.include? planeteer_calls
+  valid_calls.find do |call|
+    valid_calls.include? (planeteer_calls)
+    if planeteer_calls>"fire"
   valid_calls
   end 
 end
